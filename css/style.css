@@ -1,0 +1,160 @@
+:root {
+  --bg: #fefefe;
+  --fg: #222;
+  --accent: #0055aa;
+  --hr: #111;
+  --hr-dark: #555;
+}
+
+[data-theme="dark"] {
+  --bg: #121212;
+  --fg: #f1f1f1;
+  --accent: #66ccff;
+  --hr: var(--hr-dark);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: "Garamond", "Georgia", serif;
+  font-size: 18px;
+  line-height: 1.75;
+  margin: 0;
+  padding: 2rem;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: var(--accent);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: normal;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+h2 {
+  font-size: 1.75rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+a {
+  color: #0055aa;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+blockquote {
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid #ccc;
+  color: #555;
+  font-style: italic;
+}
+
+code {
+  font-family: "Courier New", monospace;
+  background-color: #f4f4f4;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+pre {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  overflow-x: auto;
+  border-radius: 6px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 2rem 0;
+}
+
+nav {
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+nav a {
+  margin-right: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+}
+
+details {
+  margin-bottom: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  background-color: #fafafa;
+}
+
+summary {
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+details[open] {
+  background-color: #f4f4f4;
+}
+
+hr {
+  border: none;
+  height: 3px;
+  background-color: var(--hr);
+  margin: 2rem 0;
+}
+
+#theme-toggle {
+  float: right;
+  background-color: #111;
+  color: #fefefe;
+  border: 2px solid #444;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.9rem;
+  font-family: Garamond, serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 3px;
+}
+
+#theme-toggle:hover {
+  background-color: #222;
+  border-color: #666;
+}
+
+[data-theme="dark"] #theme-toggle {
+  background-color: #fefefe;
+  color: #111;
+  border-color: #999;
+}
+
+[data-theme="dark"] #theme-toggle:hover {
+  background-color: #e0e0e0;
+  border-color: #aaa;
+}

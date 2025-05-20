@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>§ Ethocratism – Dominick Weston</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>§ Ethocratism</h1>
+      <p>A coined term on the architecture of group identity as moral power.</p>
+      <nav>
+        <a href="../../index.html">Home</a>
+        <a href="../../about.html">About</a>
+        <a href="../index.html">Writing</a>
+        <a href="https://github.com/dsweston711" target="_blank">GitHub</a>
+        <button id="theme-toggle" style="float: right; font-size: 0.9rem">
+          Toggle Theme
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Definition</h2>
+        <p>
+          A mode of governance, discourse, or moral reasoning wherein loyalty to
+          a tribal identity—whether racial, ideological, cultural, sexual,
+          &c.—supersedes universal principles, institutional neutrality, or
+          individual merit.
+        </p>
+
+        <p>
+          Ethocratism prizes group allegiance above truth, and enforces its
+          order through social coercion, moral absolutism, and the ritual
+          purification of dissent.
+        </p>
+
+        <hr />
+
+        <h2>Preface: On the Coinage of Ethocratism</h2>
+        <p>
+          This term is being developed by a student of Computer Science and
+          Japanese, not as an academic authority, but as an observer of
+          language, ideology, and the architecture of legitimacy in a world
+          increasingly governed by identity over principle.
+        </p>
+
+        <p>
+          I’m using ChatGPT as a tool of refinement—not to produce ideas on my
+          behalf, but to sharpen the ones I’ve already begun to form. Every
+          phrase here is rooted in my own thought, clarified in dialogue, and
+          offered in the spirit of intellectual transparency.
+        </p>
+
+        <hr />
+
+        <p>
+          Over time, I’ve grown dissatisfied with the existing vocabulary
+          available to describe the kinds of ideological behavior I see emerging
+          across the cultural spectrum. Each term seems either too blunt, too
+          historically misused, or too narrow in scope.
+        </p>
+
+        <h2>Terms I Reject</h2>
+        <ul>
+          <li>
+            <strong>Fascism</strong> – too historically bound and rhetorically
+            poisoned; now functions more as a slur than a diagnosis
+          </li>
+          <li>
+            <strong>Marxism</strong> – overused as a catch-all, often invoked
+            without understanding dialectics or class theory
+          </li>
+          <li>
+            <strong>Wokeness</strong> – a floating signifier more useful for
+            culture war ammunition than analytical precision
+          </li>
+          <li>
+            <strong>Tribalism</strong> – close in spirit, but too imprecise and
+            primitive in connotation
+          </li>
+          <li>
+            <strong>Cult</strong> – too religious; suggests blind submission to
+            a leader, not memetic decentralization
+          </li>
+          <li>
+            <strong>Groupthink</strong> – overly Orwellian; implies incapacity
+            rather than strategic identity enforcement
+          </li>
+          <li>
+            <strong>Moralism / Moral Panic</strong> – accurate in tone, but
+            insufficient for describing institutional power transfer
+          </li>
+          <li>
+            <strong>Identitarianism</strong> – tied too exclusively to far-right
+            ideology, missing broader progressive forms
+          </li>
+        </ul>
+
+        <h2>Why the Term Matters</h2>
+        <p>
+          “Ethocratism” names a system where group identity becomes the axis of
+          moral and institutional legitimacy, and where power is asserted not
+          through universal principle, but through identity enforcement.
+        </p>
+
+        <p>
+          Whether in DEI bureaucracy, online tribunals, or nationalist revivals,
+          this mode of governance demands a new conceptual tool. This is that
+          attempt.
+        </p>
+
+        <blockquote>
+          Derived from the Greek <em>ethnos</em> (tribe, people) and
+          <em>kratos</em> (power, rule), ethocratism means, simply, rule by the
+          tribe.
+        </blockquote>
+
+        <p>
+          This term is still evolving. I offer it not as a final word, but a
+          starting point. In naming it, we make it visible— and once visible, we
+          can critique, resist, or refine it.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <hr />
+      <p>&copy; 2025 Dominick Weston</p>
+    </footer>
+  </body>
+
+  <script>
+    const toggle = document.getElementById("theme-toggle");
+    const html = document.documentElement;
+
+    // Load saved theme from localStorage
+    const saved = localStorage.getItem("theme");
+    if (saved) html.setAttribute("data-theme", saved);
+
+    toggle.addEventListener("click", () => {
+      const isDark = html.getAttribute("data-theme") === "dark";
+      const newTheme = isDark ? "light" : "dark";
+      html.setAttribute("data-theme", newTheme);
+      localStorage.setItem("theme", newTheme);
+    });
+  </script>
+</html>

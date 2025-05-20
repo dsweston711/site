@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Writing – Dominick Weston</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Writing</h1>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../writing/index.html">Writing</a>
+        <a href="https://github.com/dsweston711" target="_blank">GitHub</a>
+        <button id="theme-toggle" style="float: right; font-size: 0.9rem">
+          Toggle Theme
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Writings by Category</h2>
+
+        <details>
+          <summary><strong>Political Philosophy</strong></summary>
+          <ul>
+            <li>
+              <a href="political/ethocratism.html">§ Ethocratism</a>
+              <span>
+                – on the power of tribal identity in modern discourse</span
+              >
+            </li>
+          </ul>
+        </details>
+
+        <details>
+          <summary><strong>Personal Reflections</strong></summary>
+          <ul>
+            <li><em>Coming soon.</em></li>
+          </ul>
+        </details>
+      </section>
+    </main>
+
+    <footer>
+      <hr />
+      <p>&copy; 2025 Dominick Weston</p>
+    </footer>
+  </body>
+
+  <script>
+    const toggle = document.getElementById("theme-toggle");
+    const html = document.documentElement;
+
+    // Load saved theme from localStorage
+    const saved = localStorage.getItem("theme");
+    if (saved) html.setAttribute("data-theme", saved);
+
+    toggle.addEventListener("click", () => {
+      const isDark = html.getAttribute("data-theme") === "dark";
+      const newTheme = isDark ? "light" : "dark";
+      html.setAttribute("data-theme", newTheme);
+      localStorage.setItem("theme", newTheme);
+    });
+  </script>
+</html>

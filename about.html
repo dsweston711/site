@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About – Dominick Weston</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>About Me</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="writing/index.html">Writing</a>
+        <a href="https://github.com/dsweston711" target="_blank">GitHub</a>
+        <button id="theme-toggle" style="float: right; font-size: 0.9rem">
+          Toggle Theme
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <p>
+          I’m Dominick Weston, a student of computer science and Japanese at the
+          University of Wisconsin–Madison. This site is a place for me to
+          document and distill my thinking—whether through essays, projects, or
+          personal notes.
+        </p>
+
+        <p>
+          My interests include philosophy of mind, political theory, and
+          systems-level programming. I’m particularly drawn to questions that
+          resist easy answers, and I tend to approach both code and ethics with
+          the same principle:
+          <em>clarity through constraint</em>.
+        </p>
+
+        <p>
+          I use this site to refine my voice, share my work, and record the arc
+          of thought as it shifts over time. If something here challenges you—or
+          clarifies something unspoken—then it’s done its job.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <hr />
+      <p>&copy; 2025 Dominick Weston</p>
+    </footer>
+  </body>
+
+  <script>
+    const toggle = document.getElementById("theme-toggle");
+    const html = document.documentElement;
+
+    // Load saved theme from localStorage
+    const saved = localStorage.getItem("theme");
+    if (saved) html.setAttribute("data-theme", saved);
+
+    toggle.addEventListener("click", () => {
+      const isDark = html.getAttribute("data-theme") === "dark";
+      const newTheme = isDark ? "light" : "dark";
+      html.setAttribute("data-theme", newTheme);
+      localStorage.setItem("theme", newTheme);
+    });
+  </script>
+</html>
