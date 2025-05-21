@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>§ Against the Perfect Day – Dominick Weston</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>§ Against the Perfect Day</h1>
+      <p>On action, delay, and the lie of waiting until you're ready.</p>
+      <nav>
+        <a href="../../index.html">Home</a>
+        <a href="../../about.html">About</a>
+        <a href="../index.html">Writing</a>
+        <a href="https://github.com/dsweston711" target="_blank">GitHub</a>
+        <button id="theme-toggle" style="float: right; font-size: 0.9rem">
+          Toggle Theme
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <p>
+          There’s a quiet illusion that governs more lives than we admit. It
+          says:
+          <em
+            >Not yet. Wait until things are right. Start when you're ready.</em
+          >
+        </p>
+
+        <p>It sounds like wisdom. In truth, it’s paralysis.</p>
+
+        <p>
+          We tell ourselves we’ll act when we’re stronger. When we’re more
+          motivated. When things calm down. We push our goals just a little
+          further down the road—until we’ve mapped out a perfect plan for a
+          version of ourselves that doesn’t yet exist.
+        </p>
+
+        <p>
+          This lie has range. It infects everything from weight loss to creative
+          work to moral courage.
+        </p>
+
+        <ul>
+          <li>"I’ll fix my habits once the semester’s over."</li>
+          <li>"I’ll get serious once I feel less overwhelmed."</li>
+          <li>"I’ll speak up once I’m sure I won’t mess it up."</li>
+        </ul>
+
+        <p>
+          But readiness isn’t something you wait for. It’s something you
+          <strong>build</strong>—by <em>acting before you're ready</em>.
+        </p>
+
+        <hr />
+
+        <h2>The Cost of Waiting</h2>
+        <p>
+          We think we’re being strategic by holding off until conditions
+          improve. But that’s not strategy—it’s fear wearing a reasonable mask.
+          If every action must wait for perfect alignment, then most actions
+          never happen. We become spectators in our own lives, endlessly
+          preparing, rarely doing.
+        </p>
+
+        <p>
+          And worse: the more we delay, the more we train ourselves to be the
+          kind of person who waits. Who hesitates. Who watches.
+        </p>
+
+        <hr />
+
+        <h2>Why Small Actions Matter</h2>
+        <p>
+          There's a cold logic that says:
+          <em>If this little thing won’t change everything, why bother?</em>
+        </p>
+
+        <p>
+          But that logic misunderstands how change works. A single workout
+          doesn’t give you the body. One act of discipline doesn’t make you
+          stoic. One page doesn’t make a novel. But
+          <strong>it begins the orientation</strong>.
+        </p>
+
+        <p>The point is not impact. The point is <em>trajectory</em>.</p>
+
+        <p>
+          We act not because each act transforms the world—but because each act
+          transforms <strong>us</strong>. And from that, the world begins to
+          change.
+        </p>
+
+        <hr />
+
+        <h2>Act as if the Better World Already Exists</h2>
+        <p>
+          If you want to be someone else—more disciplined, more capable, more
+          honest—you don’t wait for that self to appear. You
+          <em>act as if they already live in you</em>.
+        </p>
+
+        <ul>
+          <li>Speak as if your voice matters—even if it shakes.</li>
+          <li>
+            Treat your body as if it deserves care—even if you're still
+            repairing it.
+          </li>
+          <li>Live by your values—even when no one is watching.</li>
+        </ul>
+
+        <p>
+          Waiting for better circumstances to live rightly is like waiting for
+          wealth to practice generosity. The person who will act “someday” is
+          not the same as the one who acts <em>now</em>.
+        </p>
+
+        <hr />
+
+        <h2>No Perfect Day is Coming</h2>
+        <p>
+          People change not because they’re struck by lightning, but because
+          they move. They begin. And the conditions improve
+          <em>because they acted</em>, not the other way around.
+        </p>
+
+        <p>You want a better life? A better body? A better soul?</p>
+
+        <p>
+          Then start before you’re ready. Before you feel it. Before the world
+          tells you it’s time.
+        </p>
+
+        <p>
+          Do it while your hands are shaking. Do it while you still doubt. Do it
+          while it feels like it won’t matter.
+        </p>
+
+        <p>Because the only day that matters is today.</p>
+
+        <p>
+          And the person you become is the one who moves—even without
+          guarantees.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <hr />
+      <p>&copy; 2025 Dominick Weston</p>
+    </footer>
+
+    <script>
+      const toggle = document.getElementById("theme-toggle");
+      const html = document.documentElement;
+
+      const saved = localStorage.getItem("theme");
+      if (saved) html.setAttribute("data-theme", saved);
+
+      toggle.addEventListener("click", () => {
+        const isDark = html.getAttribute("data-theme") === "dark";
+        const newTheme = isDark ? "light" : "dark";
+        html.setAttribute("data-theme", newTheme);
+        localStorage.setItem("theme", newTheme);
+      });
+    </script>
+  </body>
+</html>
