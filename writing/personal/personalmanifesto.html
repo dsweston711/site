@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>§ Personal Manifesto – Dominick Weston</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>§ Personal Manifesto</h1>
+      <nav>
+        <a href="../../index.html">Home</a>
+        <a href="../../about.html">About</a>
+        <a href="../index.html">Writing</a>
+        <a href="https://github.com/dsweston711" target="_blank">GitHub</a>
+        <button id="theme-toggle" style="float: right; font-size: 0.9rem">
+          Toggle Theme
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1>I. ON PRINCIPLES AND APPEARANCE</h1>
+        <p>
+          I do not speak to curry favour, nor to delight the multitude. I speak
+          to illuminate. Should the truth estrange me from popularity or
+          station, let the rift remain. I shall not delegate my conscience to
+          the safety of consensus, nor drape myself in the garb of neutrality
+          when judgement is due. That coward's refrain—"I know not"—shall not
+          find comfort in my mouth when knowledge abides in my heart.
+        </p>
+
+        <h1>II. ON EXPOSURE AND CHARACTER</h1>
+        <p>
+          I shall conduct myself in private as though the world’s eye were upon
+          me. Not from vanity, but from resolve. Let it never be said that I
+          fear the revelation of my own life. That which is hidden shall one day
+          be known, and so I prepare not by concealment, but by constancy. If
+          dread of exposure stirs within me, it is a summons to refinement, not
+          retreat.
+        </p>
+
+        <h1>III. ON JUDGEMENT AND ITS NECESSITY</h1>
+        <p>
+          To judge is not to revile, but to discern—and to act when action
+          becomes obligation. I shall not confuse silence with virtue, nor
+          indulgence with grace. Yet I know that not all matters demand my
+          verdict. Let me withhold judgment where wisdom permits—but not where
+          inaction becomes consent. Where betrayal compels a stance, I shall not
+          flinch. Where hypocrisy festers, I shall not feign blindness. Let my
+          judgment, when summoned, be neither rash nor delayed, but precise,
+          restrained, and unyielding in its justice.
+        </p>
+
+        <h1>IV. ON FRIENDSHIP AND FIDELITY</h1>
+        <p>
+          A friend absent in the hour of one’s trial is no friend but a
+          spectator cloaked in familiarity. I shall not profess loyalty yet
+          vanish when courage is called. If I would wish defence when wronged, I
+          must offer it in turn. Agreement is not the test of affection—but
+          presence, steadfast and seen, is.
+        </p>
+
+        <h1>V. ON THE PRACTICE OF CLARITY</h1>
+        <p>
+          Each day I shall interrogate my own integrity before daring to measure
+          another’s. Moral clarity is not a posture to be struck, but a labour
+          to be undertaken. When I falter, I will confess it. When I stray, I
+          will amend. Let my words and deeds be of the same substance, unmixed
+          with performance.
+        </p>
+
+        <h1>VI. ON THE SELF I SHALL BECOME</h1>
+        <p>
+          What I build is not renown, nor admiration, nor following—but a self
+          that may endure all weathers. Let my manner, my judgements, my habits,
+          and my countenance form a single line, unmarred by contradiction. Let
+          those who scrutinise my life find nothing cunning, nothing
+          counterfeit, nothing hollow.
+        </p>
+
+        <h1>VII. ON THE GOLDEN RULE AND DEFEAT WITH DIGNITY</h1>
+        <p>
+          I shall treat others as I myself would wish to be treated, not only in
+          triumph, but in their hour of loss. The golden rule is not a
+          convenience, but a commandment; it binds most tightly when pride would
+          see it cast aside. When I am bested—by debate, by contest, by life—I
+          shall yield with grace, not bitterness. Let me not conflate defeat
+          with dishonour. For to lose well is a virtue rarer than victory.
+        </p>
+
+        <h1>VIII. ON CHANGE AND THE PRESENT HOUR</h1>
+        <p>
+          Change is not the enemy—it is the tutor of the resolute. I shall not
+          fear its coming, nor curse its passage. Whether it elevates or
+          humbles, I shall meet it with discernment and open eyes. Let me not
+          defer my transformation to some distant hour. The past is ash; the
+          future, mist. Only the present is real, and it demands my full
+          attention. If I am to become more than I am, I must act with clarity
+          <em>now</em>. Not tomorrow, not when the mood is right, but now. My
+          better self does not lie ahead—it lies in the choice I make in this
+          moment.
+        </p>
+
+        <h1>IX. ON THE VANITY OF UNLIVED VIRTUE</h1>
+        <p>
+          Let me not be one who speaks of virtue yet shirks its burden. To know
+          what is good and fail to pursue it is no less damning than ignorance
+          itself. If I find in my own counsel the superior path, let me take it.
+          If my words offer wisdom, let them guide my conduct. To write a
+          manifesto and live contrary to its charge is not merely hypocrisy—it
+          is waste. These are not idle musings, but directives. They must be
+          etched upon the heart, not left to fade upon the page. Better to live
+          quietly with honour than to preach loudly and lie in deed.
+        </p>
+
+        <p>
+          This is not theatre. This is not apology. This is no costume donned
+          for men’s applause.
+        </p>
+
+        <p>This is the making of a man who is whole.</p>
+      </section>
+    </main>
+
+    <footer>
+      <hr />
+      <p>&copy; 2025 Dominick Weston</p>
+    </footer>
+
+    <script>
+      const toggle = document.getElementById("theme-toggle");
+      const html = document.documentElement;
+
+      const saved = localStorage.getItem("theme");
+      if (saved) html.setAttribute("data-theme", saved);
+
+      toggle.addEventListener("click", () => {
+        const isDark = html.getAttribute("data-theme") === "dark";
+        const newTheme = isDark ? "light" : "dark";
+        html.setAttribute("data-theme", newTheme);
+        localStorage.setItem("theme", newTheme);
+      });
+    </script>
+  </body>
+</html>
